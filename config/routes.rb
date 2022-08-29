@@ -1,17 +1,12 @@
 Rails.application.routes.draw do
   devise_for :users
-  root to: "pages#home"
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  root to: "products#home"
 
-  # Defines the root path route ("/")
-  # root "articles#index"
-
+  resources :products do
+    resources :transactions
+  end
 end
 
 
-# Rails.application.routes.draw do
-
-#   resources :restaurants do
-#     resources :reviews, only: [:new]
-#   end
-# end
+# //, only: '%w'[:index, :show, :new, :create]
+# , only: '%w'[:index, :new, :create]
