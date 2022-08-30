@@ -1,0 +1,7 @@
+<h1><%= @product.name %></h1>
+<h2>Product description: <%= @product.overview %></h2>
+ <p>Price: £<%= @product.price  %></p>
+<br>
+<%= link_to "Purchase #{@product.name}", new_product_transaction_path(@product)  %>
+<br>
+<%= link_to "Homepage", products_path  %>
