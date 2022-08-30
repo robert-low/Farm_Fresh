@@ -3,7 +3,7 @@ class ProductsController < ApplicationController
   def index
     @products = Product.All
   end
-  
+
   def show
     @product = Product.find(params[:id])
   end
@@ -27,3 +27,4 @@ class ProductsController < ApplicationController
   def product_params
     params.require(:product).permit(:name, :overview, :price, :image_url, :location)
   end
+end
