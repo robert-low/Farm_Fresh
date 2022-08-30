@@ -1,4 +1,6 @@
 .navbar-lewagon {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
   background: $dark_green;
   color: $blue;
@@ -19,6 +21,13 @@
   // border: 2px solid white;
 }
 
-.nav-link:hover {
-  opacity: 0.5;
+#navbarDropdown {
+  margin-right: 75px;
 }
+
+.avatar {
+  width: 85px;
+  border-radius: 50%;
+}
+
+
