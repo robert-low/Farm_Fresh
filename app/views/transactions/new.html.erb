@@ -1,7 +1,15 @@
-<h2> Transaction Page </h2>
+
   <div>
-    <div>
+    <h2 class="form-name"> Information Page </h2>
+    <div class="container-transaction">
+    <div class="container w-80">
       <%= simple_form_for [@product, @transaction] do |f| %>
-        <%= f.submit "Submit to Owner ", class: "btn btn-primary" %>
+        <%= f.input :quantity %>
+        <%= f.input :comment %>
+        <%= f.input :start_date, as: :date, html5: true %>
+        <%= f.input :end_date, as: :date, html5: true %>
+        <%= f.submit "Submit to Owner ", class: "btn btn-primary text-center" %>
       <% end %>
+      </div>
     </div>
+<div>
