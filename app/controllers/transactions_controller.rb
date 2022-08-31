@@ -16,8 +16,7 @@ class TransactionsController < ApplicationController
     @transaction.product = @product
     @transaction.user = current_user
     if @transaction.save
-      # redirect_to product_transaction_path(@product)
-      redirect_to product_path(@product)
+      redirect_to product_transaction_path(@product, @transaction)
     else
       render 'new', status: :unprocessable_entity
     end

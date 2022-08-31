@@ -13,7 +13,7 @@
     transition-delay: 0.05s;
     border: rgb(205, 205, 205) 1px solid;
   }
-  
+
   .card-product > img {
     height: 350px;
     width: 100%;
@@ -25,21 +25,21 @@
     border-radius: 0px ;
     transition-delay: 0.05s;
   }
-  
+
   .card-product h2 {
     font-size: 16px;
     font-weight: bold;
     margin: 0;
     color: white;
   }
-  
+
   .card-product p {
     font-size: 12px;
     margin: 0;
     color: white;
   }
-  
-  
+
+
   .card-product.card-product-infos {
     padding: 16px;
     display: flex;
@@ -47,7 +47,7 @@
     align-items: flex-end;
     position: relative;
   }
-  
+
   .card-product-infos .card-product-user {
     position: absolute;
     right: 16px;
@@ -60,7 +60,7 @@
     align-content: center;
     justify-content: space-between;
     padding: 15px;
-    
+
   }
 
   .product-description {
@@ -78,7 +78,7 @@
     padding-bottom: 3px;
     padding-left: 10px;
     padding-right: 10px;
-    border-radius: 12px;  
+    border-radius: 12px;
     border: white 1px solid;
     text-decoration: none;
   }
@@ -88,7 +88,7 @@
     padding-bottom: 3px;
     padding-left: 10px;
     padding-right: 10px;
-    border-radius: 12px;  
+    border-radius: 12px;
     border: white 1px solid;
     text-decoration: none;
   }
