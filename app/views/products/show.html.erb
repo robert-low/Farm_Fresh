@@ -1,7 +1,19 @@
-<h1><%= @product.name %></h1>
-<h2>Product description: <%= @product.overview %></h2>
- <p>Price: £<%= @product.price  %></p>
-<br>
-<%= link_to "Add #{@product.name} to cart", new_product_transaction_path(@product)  %>
-<br>
-<%= link_to "Homepage", products_path  %>
+<div class="container">
+  <div class="row d-flex">
+    <div class="col-6 p-2">
+      <img src="https://picsum.photos/400/400" class="rounded mx-auto d-block w-100" alt="random img">
+    </div>
+    <div class="col-6 p-2">
+      <%# product card title  %>
+      <div class="card">
+        <h5 class="card-header"><%= @product.name %></h5>
+        <div class="card-body">
+          <p class="card-text"><%= @product.overview %></p>
+          <p class="card-text">Location: <%= @product.location %></p>
+          <p class="card-text">£<%= @product.price %></p>
+          <%= link_to "<button class='btn btn-primary'>Add to basket</button>".html_safe, new_product_transaction(@product)  %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
