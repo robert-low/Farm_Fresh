@@ -2,6 +2,6 @@
 <h2>Product description: <%= @product.overview %></h2>
  <p>Price: £<%= @product.price  %></p>
 <br>
-<%= link_to "Purchase #{@product.name}", new_product_transaction_path(@product)  %>
+<%= link_to "Add #{@product.name} to cart", new_product_transaction_path(@product)  %>
 <br>
 <%= link_to "Homepage", products_path  %>

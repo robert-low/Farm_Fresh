@@ -1,0 +1,7 @@
+<h2> Transaction Page </h2>
+  <div>
+    <div>
+      <%= simple_form_for [@product, @transaction] do |f| %>
+        <%= f.submit "Submit to Owner ", class: "btn btn-primary" %>
+      <% end %>
+    </div>
