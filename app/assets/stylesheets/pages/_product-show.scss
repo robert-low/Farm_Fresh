@@ -1,0 +1,21 @@
+.show-card {
+    flex-grow: 1;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-gap: 12px;
+    padding: 14px;
+  }
+
+  .show-image-box {
+      display:flex;
+      align-items: flex-start;
+      justify-content: flex-end;
+      
+
+  }
+
+  .show-card-body {
+
+    display: inline-block;
+  }
