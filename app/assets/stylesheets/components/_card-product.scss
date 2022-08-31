@@ -1,8 +1,8 @@
 .card-product {
     overflow: hidden;
     background: $dark_green;
-    width: 350px;
-    height: 475px;
+    width: 249px;
+    height: 338px;
     border-radius: 10px;
     margin-bottom: 20px;
     text-decoration: none;
@@ -15,7 +15,7 @@
   }
 
   .card-product > img {
-    height: 350px;
+    height: 249px;
     width: 100%;
     object-fit: cover;
     border-radius: 10px ;
@@ -92,3 +92,8 @@
     border: white 1px solid;
     text-decoration: none;
   }
+
+  a:link { text-decoration: none; }
+  a:visited { text-decoration: none; }
+  a:hover { text-decoration: none; }
+  a:active { text-decoration: none; }

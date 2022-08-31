@@ -11,15 +11,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 12px;
-    padding: 16px;
+    padding: 14px;
   }
   
   .index-head {
     
      background-color: $white;
-     display:flex;
-     justify-content: center;
-     align-items: center;
+     text-align: center;
      padding-top: 20px;
      color: $blue;
 
