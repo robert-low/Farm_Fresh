@@ -1,19 +1,25 @@
-<h1>All products</h1>
-
-<% @products.each do |product| %>
-    <%= link_to product_path(product) do %>
-        <div class="card-product">
-            <%= image_tag product.image_url %>
-            <div class="card-product-infos">
-              <div class= "card-product-info">
-                <p class= "product-title"><%= product.name %></p>
-                <p class= "product-price">£<%= product.price %></p>
-              </div>
-                <p class= "product-description">Description: <%= product.overview %></p>
+<div class = "index-head">
+   <h1>Welcome to FarmFresh</h1>
+</div>
+<div class = "content"> 
+  <div class = "cards">
+    <% @products.each do |product| %>
+        <%= link_to product_path(product) do %>
+            <div class="card-product">
+                <%= image_tag product.image_url %>
+                <div class="card-product-infos">
+                  <div class= "card-product-info">
+                    <p class= "product-title"><%= product.name %></p>
+                    <p class= "product-price">£<%= product.price %></p>
+                  </div>
+                    <p class= "product-description">Description: <%= product.overview %></p>
+                </div>
             </div>
-        </div>
+        <% end %>
     <% end %>
-<% end %>
+  </div>
+  <%= image_tag "map.png", id:"map" %>
+</div>
 
 
-<%= link_to '<button class="btn btn-flat">CREATE A NEW PRODUCT</button>'.html_safe, new_product_path %>
+
