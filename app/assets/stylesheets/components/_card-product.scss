@@ -1,0 +1,90 @@
+.card-product {
+    overflow: hidden;
+    background: #38A3A5;
+    width: 350px;
+    height: 475px;
+    border-radius: 10px;
+  }
+
+  .card-product:hover {
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    transition-delay: 0.05s;
+    border: rgb(205, 205, 205) 1px solid;
+  }
+  
+  .card-product > img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px ;
+  }
+
+  .card-product:hover > img {
+    border-radius: 0px ;
+    transition-delay: 0.05s;
+  }
+  
+  .card-product h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+  }
+  
+  .card-product p {
+    font-size: 12px;
+    opacity: .7;
+    margin: 0;
+    color: white;
+  }
+  
+  
+  .card-product.card-product-infos {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+  }
+  
+  .card-product-infos .card-product-user {
+    position: absolute;
+    right: 16px;
+    top: -20px;
+    width: 40px;
+  }
+
+  .card-product-info {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 15px;
+    
+  }
+
+  .card-description {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-top: 0px;
+    text-align: justify;
+    color: white;
+  }
+
+  .product-price {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 12px;  
+    border: white 1px solid;
+  }
+
+  .product-title {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 12px;  
+    border: white 1px solid;
+  }
