@@ -1,6 +1,7 @@
 class TransactionsController < ApplicationController
 
   def show
+    @product = Product.find(params[:product_id])
     @transaction = Transaction.find(params[:id])
   end
 
@@ -25,6 +26,6 @@ class TransactionsController < ApplicationController
   private
 
   def transaction_params
-    params.require(:transaction).permit(:product_id)
+    params.require(:transaction).permit(:product_id, :quantity, :comment, :start_date, :end_date)
   end
 end
