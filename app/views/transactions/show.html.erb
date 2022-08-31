@@ -1,4 +1,5 @@
-<div>
+<div class="confirmation-container">
   <h1><strong>Thank you!</strong></h1>
-  <h2>You have rented <%=@product.name%>!</h2>
+  <h2>You would like to rent <%=@product.name%></h2>
+  <%= link_to "Confirm", products_path, class: "btn btn-primary"%>
 </div>

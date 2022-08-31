@@ -1,7 +1,7 @@
 <div class = "index-head">
    <h1>Welcome to FarmFresh</h1>
 </div>
-<div class = "content"> 
+<div class = "content">
   <div class = "cards">
     <% @products.each do |product| %>
         <%= link_to product_path(product) do %>
@@ -20,6 +20,3 @@
   </div>
   <%= image_tag "map.png", id:"map" %>
 </div>
-
-
-
