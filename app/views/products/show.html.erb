@@ -13,7 +13,7 @@
           <p class="card-text"><%= @product.overview %></p>
           <p class="card-text">Location: <%= @product.location %></p>
           <p class="card-text">£<%= @product.price %></p>
-          <%= link_to "<button class='btn btn-primary'>Add to basket</button>".html_safe, new_product_transaction_path(@product)  %>
+          <%= link_to "<button class='btn btn-primary'>Add to basket</button>".html_safe,  new_product_transaction_path(@product)  %>
         </div>
       </div>
     </div>
