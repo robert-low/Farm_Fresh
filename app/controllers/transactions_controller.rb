@@ -15,7 +15,6 @@ class TransactionsController < ApplicationController
     @transaction = Transaction.new(transaction_params)
     @transaction.product = @product
     @transaction.user = current_user
-    
     if @transaction.save
       redirect_to product_transaction_path(@product, @transaction)
     else
