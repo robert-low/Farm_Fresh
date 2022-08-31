@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row d-flex">
     <div class="col-6 p-2">
-      <img src="https://picsum.photos/400/400" class="rounded mx-auto d-block w-100" alt="random img">
+    <%= image_tag product.image_url  class:"rounded mx-auto d-block w-100" alt="random img"%>
     </div>
     <div class="col-6 p-2">
       <%# product card title  %>
@@ -11,7 +11,7 @@
           <p class="card-text"><%= @product.overview %></p>
           <p class="card-text">Location: <%= @product.location %></p>
           <p class="card-text">£<%= @product.price %></p>
-          <%= link_to "<button class='btn btn-primary'>Add to basket</button>".html_safe, new_product_transaction(@product)  %>
+          <%= link_to "<button class='btn btn-primary'>Add to basket</button>".html_safe, new_product_transaction_path(@product)  %>
         </div>
       </div>
     </div>
