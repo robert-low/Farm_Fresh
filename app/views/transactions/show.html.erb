@@ -1,6 +1,6 @@
 <div class="confirmation-container">
   <h1><strong>Thank you!</strong></h1>
-  <h2>Here is your FarmFresh request:</h2>
+  <h2>Please confirm your FarmFresh request below:</h2>
   <br>
     <h4>You are renting: </h4>
     <p><%=@transaction.quantity%> <%=@product.name%></p>
@@ -8,5 +8,5 @@
     <p><%=@transaction.comment%></p>
     <h4>Your rent period is from: </h4>
     <p><%=@transaction.start_date%> to <%=@transaction.end_date%></p>
-  <%= link_to "Confirm", products_path, class: "btn btn-primary"%>
+  <%= link_to "Confirm", user_path(current_user), class: "btn btn-primary"%>
 </div>
