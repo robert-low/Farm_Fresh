@@ -1,6 +1,6 @@
 <div class="show-card">
     <div class="show-image-box">
-      <%= image_tag @product.image_url, class: "show-image" %>
+      <%= cl_image_tag @product.image_url.key, height: 300, width: 400, crop: :fill %>
     </div>
     <div class="product-card-show">
       <%# product card title  %>
