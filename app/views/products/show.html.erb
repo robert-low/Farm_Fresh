@@ -2,7 +2,7 @@
   <div class="row d-flex">
     <div class="col-6 p-2">
 
-      <%= image_tag @product.image_url, class: "rounded mx-auto d-block w-100" %>
+      <%= cl_image_tag @product.image_url.key, height: 300, width: 400, crop: :fill %>
 
     </div>
     <div class="col-6 p-2">
