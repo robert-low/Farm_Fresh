@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   resources :products do
     resources :transactions
   end
+resources :users, only: '%w'[:show]
+
 end
 
 
