@@ -1,4 +1,4 @@
-// Specific CSS for your home-page
+Specific CSS for your home-page
 .content {
     display: flex;
     padding-right: 20px;
@@ -10,23 +10,21 @@
     flex-grow: 1;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 12px;
+    grid-gap: 5px;
     padding: 14px;
   }
 
   .index-head {
-
      background-color: $white;
      text-align: center;
      padding-top: 20px;
      color: $blue;
-
   }
 
   #map {
-    height: 100vh;
-    width: 600px;
-    position: sticky;
+    height: 400px;
+    width: 100vw;
+    position: relative;
     object-fit: cover;
     top: 0;
     border: $blue solid 2px;
@@ -36,7 +34,7 @@
 
   /*Media Queries*/
 
-  /*Smallest device*/
+  // /*Smallest device*/
   @media (min-width: 100px) and (max-width: 575px) {
     .cards {
       grid-template-columns: 1fr;
@@ -46,7 +44,7 @@
     }
   }
 
-  /*Small devices (landscape phones, 576px and up)*/
+  // /*Small devices (landscape phones, 576px and up)*/
   @media (min-width: 576px) {
     .cards {
       grid-template-columns: 1fr 1fr;
