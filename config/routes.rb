@@ -1,15 +1,13 @@
 Rails.application.routes.draw do
   devise_for :users
 
-
   root to: "products#index"
 
-
   resources :products do
-    resources :transactions
+    resources :transactions, except: :destroy
   end
-resources :users, only: '%w'[:show]
-
+resources :users, only: [:show]
+resources :transactions, only: [:destroy]
 end
 
 

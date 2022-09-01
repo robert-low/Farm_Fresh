@@ -1,0 +1,38 @@
+.transaction-container {
+    margin:auto;
+    
+}
+
+.transaction-card {
+    display:flex;
+    border: black 2px solid;
+    margin: 30px;
+    width: 600px;
+    height: 150px;
+}
+
+.transaction-card p {
+    
+    margin: 0px;
+}
+.transaction-title {
+    text-align: center;
+
+}
+
+.card-text {
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    width:300px
+
+}
+
+.card-delete {
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    width:300px;
+    color: white;
+
+}
