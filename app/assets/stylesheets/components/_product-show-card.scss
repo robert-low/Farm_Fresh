@@ -1,0 +1,42 @@
+.card-title {
+    border: solid $blue 1.5px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+    margin-bottom: 20px;
+    margin-top: 0PX;
+    // margin-right: 200px;
+    text-align: center;
+    background-color: $green;
+    width: 500px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+}
+
+.show-card-body {
+
+    border: solid $blue 1.5px;
+    padding: 10px;
+    border-radius: 10px;
+    
+    margin: 20px;
+    margin-bottom: 0px;
+    background-color: $green;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    width: 500px;
+    // margin-right: 200px;
+}
+
+.show-image {
+    border: solid $blue 1.5px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+}
+
+.btn-show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

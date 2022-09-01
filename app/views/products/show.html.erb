@@ -1,21 +1,19 @@
-<div class="container">
-  <div class="row d-flex">
-    <div class="col-6 p-2">
-
-      <%= cl_image_tag @product.image_url.key, height: 300, width: 400, crop: :fill %>
-
+<div class="show-card">
+    <div class="show-image-box">
+      <%= image_tag @product.image_url, class: "show-image" %>
     </div>
-    <div class="col-6 p-2">
+    <div class="product-card-show">
       <%# product card title  %>
-      <div class="card">
+      <div class="card-title">
         <h5 class="card-header"><%= @product.name %></h5>
-        <div class="card-body">
-          <p class="card-text"><%= @product.overview %></p>
-          <p class="card-text">Location: <%= @product.location %></p>
-          <p class="card-text">£<%= @product.price %></p>
-          <%= link_to "<button class='btn btn-primary'>Rent fruit</button>".html_safe,  new_product_transaction_path(@product)  %>
+      </div>
+      <div class="show-card-body">
+            <p class="show-card-overview"> <strong>Product description: </strong> <%= @product.overview %></p>
+            <p class="show-card-location"><strong>Location: </strong> <%= @product.location %></p>
+            <p class="show-card-text"><strong>Price:</strong> £ <%= @product.price %> per day</p>
+        <div class="btn-show">
+            <%= link_to "<button class='btn-farm btn-show'>Rent fruit</button>".html_safe,  new_product_transaction_path(@product)  %>
         </div>
       </div>
     </div>
-  </div>
 </div>
