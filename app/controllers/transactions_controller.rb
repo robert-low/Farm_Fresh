@@ -22,6 +22,12 @@ class TransactionsController < ApplicationController
     end
   end
 
+  def destroy
+    @transaction = Transaction.find(params[:id])
+    @transaction.destroy
+    redirect_to user_path(current_user)
+  end
+
   private
 
   def transaction_params
