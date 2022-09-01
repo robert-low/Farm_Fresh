@@ -1,7 +1,7 @@
 Specific CSS for your home-page
 
 .content {
-    display: flex;
+    // display: flex;
     background-color: white;
     padding-bottom: 20px;
   }
@@ -22,12 +22,14 @@ Specific CSS for your home-page
   }
 
  #map {
+    width: 450px;
     height: 100vh;
     position: sticky;
     top: 0;
     border: $blue solid 2px;
     border-radius: 10px;
     margin-top: 15px;
+    flex-grow: 1;
   }
 
   /*Media Queries*/
@@ -49,6 +51,7 @@ Specific CSS for your home-page
     }
     #map {
       display: none;
+
     }
   }
 
