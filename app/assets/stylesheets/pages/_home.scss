@@ -1,9 +1,9 @@
 Specific CSS for your home-page
+
 .content {
     display: flex;
-    padding-right: 20px;
-    padding-left: 20px;
     background-color: white;
+    padding-bottom: 20px;
   }
 
   .cards {
@@ -21,11 +21,9 @@ Specific CSS for your home-page
      color: $blue;
   }
 
-  #map {
-    height: 400px;
-    width: 100vw;
-    position: relative;
-    object-fit: cover;
+ #map {
+    height: 100vh;
+    position: sticky;
     top: 0;
     border: $blue solid 2px;
     border-radius: 10px;
@@ -34,7 +32,7 @@ Specific CSS for your home-page
 
   /*Media Queries*/
 
-  // /*Smallest device*/
+  /*Smallest device*/
   @media (min-width: 100px) and (max-width: 575px) {
     .cards {
       grid-template-columns: 1fr;
@@ -44,8 +42,8 @@ Specific CSS for your home-page
     }
   }
 
-  // /*Small devices (landscape phones, 576px and up)*/
-  @media (min-width: 576px) {
+  /*Small devices (landscape phones, 576px and up)*/
+   @media (min-width: 576px) {
     .cards {
       grid-template-columns: 1fr 1fr;
     }
