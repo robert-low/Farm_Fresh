@@ -1,6 +1,6 @@
 <div class="show-card">
     <div class="show-image-box">
-      <%= cl_image_tag @product.image_url.key, height: 300, width: 400, crop: :fill %>
+      <%= cl_image_tag @product.image_url.key, height: 300, width: 400, crop: :fit %>
     </div>
     <div class="product-card-show">
       <%# product card title  %>
@@ -8,7 +8,7 @@
         <h5 class="card-header"><%= @product.name %></h5>
       </div>
       <div class="show-card-body">
-            <p class="show-card-overview"> <strong>Product description: </strong> <%= @product.overview %></p>
+            <p class="show-card-overview"><%= @product.overview %></p>
             <p class="show-card-location"><strong>Location: </strong> <%= @product.location %></p>
             <p class="show-card-text"><strong>Price:</strong> £ <%= @product.price %> per day</p>
         <div class="btn-show">
