@@ -2,6 +2,14 @@ class ProductsController < ApplicationController
 
   def index
     @products = Product.all
+    @markers = @products.geocoded.map do |product|
+      {
+        lat: product.latitude,
+        lng: product.longitude,
+        info_window: render_to_string(partial: "info_window", locals: { product: product }),
+        image_url: helpers.asset_url("FarmFresh_2.png")
+      }
+    end
   end
 
   def show

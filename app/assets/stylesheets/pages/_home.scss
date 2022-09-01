@@ -1,9 +1,10 @@
 // Specific CSS for your home-page
+
+
 .content {
     display: flex;
-    padding-right: 20px;
-    padding-left: 20px;
     background-color: white;
+    padding-bottom: 20px;
   }
 
   .cards {
@@ -13,9 +14,9 @@
     grid-gap: 12px;
     padding: 14px;
   }
-  
+
   .index-head {
-    
+
      background-color: $white;
      text-align: center;
      padding-top: 20px;
@@ -25,15 +26,17 @@
 
   #map {
     height: 100vh;
+    width: 450px;
     position: sticky;
+    object-fit: cover;
     top: 0;
     border: $blue solid 2px;
     border-radius: 10px;
     margin-top: 15px;
   }
-  
+
   /*Media Queries*/
-  
+
   /*Smallest device*/
   @media (min-width: 100px) and (max-width: 575px) {
     .cards {
@@ -43,7 +46,7 @@
       display: none;
     }
   }
-  
+
   /*Small devices (landscape phones, 576px and up)*/
   @media (min-width: 576px) {
     .cards {
@@ -53,7 +56,7 @@
       display: none;
     }
   }
-  
+
   /*Medium devices (tablets, 768px and up)*/
   @media (min-width: 1200px) {
     .cards {
@@ -63,4 +66,3 @@
       display: block;
     }
   }
-
