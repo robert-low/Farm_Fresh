@@ -10,6 +10,17 @@ class ProductsController < ApplicationController
         image_url: helpers.asset_url("FarmFresh_2.png")
       }
     end
+
+    @products = Product.order(price: :desc)
+
+    if params[:query].present?
+      @products = @products.where('name ILIKE ?', "%#{params[:query]}%")
+    end
+
+    respond_to do |format|
+      format.html # Follow regular flow of Rails
+      format.text { render partial: 'list.html', locals: { products: @products } }
+    end
   end
 
   def show
