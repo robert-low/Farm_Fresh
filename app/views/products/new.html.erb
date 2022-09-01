@@ -1,18 +1,13 @@
-<h1 style="text-align: center;">Add new Product</h1>
-<hr>
+<h1 style="text-align: center; margin-top: 20px;">Add New Product</h1>
+<div class="create-container">
 <div class="container">
 <%= simple_form_for(@product) do |f| %>
   <%= f.input :name %>
   <%= f.input :overview %>
   <%= f.input :price %>
-  <%= f.input :image_url%>
+  <%= f.input :image_url, as: :file %>
   <%= f.input :location %>
   <%= f.submit %>
 <% end %>
 </div>
-
-<br>
-
-<div>
-  <%= link_to "Home", products_path, class: "btn btn-primary" %>
 </div>
