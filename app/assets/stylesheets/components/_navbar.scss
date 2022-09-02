@@ -2,11 +2,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: $dark_green;
+  // background: $dark_green;
   color: $blue;
   height: 110px;
 
   border-bottom: 2px solid $blue;
+  background: $dark_green;
 }
 
 .navbar-lewagon .navbar-collapse {
