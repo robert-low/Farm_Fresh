@@ -3,7 +3,7 @@ class Product < ApplicationRecord
   has_many :transactions
   has_one_attached :image_url
 
-  validates :name, presence: true, length: { maximum: 15 }
+  validates :name, presence: true, length: { maximum: 25 }
   validates :mini_description, presence: true, length: { maximum: 25 }
   validates :overview, presence: true
   validates :price, presence: true, length: { maximum: 8 }

@@ -24,7 +24,7 @@ product.save!
 
 file = URI.open("https://www.props4shows.co.uk/Portals/1/product/images/prd403a2e52-88cb-48fc-93fb-779d06af4415.jpg")
 product = Product.new(
-  name: "Red Velvet Layer Cake Gateau",
+  name: "Red Velvet Cake Gateau",
   mini_description: "Gateau get this!",
   overview: "Delicious sythetic foam goodness",
   price: 16.50,
@@ -37,7 +37,7 @@ product.save!
 file = URI.open("https://www.props4shows.co.uk/Portals/1/product/images/prd470ebe79-d1e9-47db-ab51-2685d7ebf452.jpg")
 product = Product.new(
   name: "Plastic donuts",
-  mini_description: "J-delicious",
+  mini_description: "J-dillacious",
   overview: "3-pack. Custard not included, consume at your own risk",
   price: 12,
   location: "72 Staines Road West, Sunbury on Thames, TW16 7DR",
@@ -72,7 +72,7 @@ product.save!
 
 file = URI.open("https://www.props4shows.co.uk/Portals/1/product/images/prd00e0dad3-ac93-412c-a787-1f9f5d3576fa.jpg")
 product = Product.new(
-  name: "Plastic Grana Padano Cheese Wheel",
+  name: "Padano Cheese Wheel",
   mini_description: "Smell my cheese",
   overview: "Designed by Massimo Bottura",
   price: 38,
@@ -96,8 +96,8 @@ product.save!
 
 file = URI.open("https://www.props4shows.co.uk/Portals/1/product/images/prda28d60d9-2e90-4764-83af-d0a6d54111a7.jpg")
 product = Product.new(
-  name: "British Meat Selection Basket - Raw",
-  mini_description: "Feeling meaty",
+  name: "British Meat Selection",
+  mini_description: "Feeling meaty - raw",
   overview: "Basket of raw meat? anyone?",
   price: 50,
   location: "48 Ladeside Terrace, Brodick, KA27 8EW",
@@ -129,6 +129,5 @@ product = Product.new(
 )
 product.image_url.attach(io: file, filename: "corn.jpg", content_type: "image/jpg")
 product.save!
-
 
 puts "Products created!"
