@@ -11,9 +11,9 @@
             <h2><%= transaction.product.name %></h2>
             <p>Product: <%= transaction.product.name %></p>
             <p>Quantity: <%= transaction.quantity %></p>
-            <p>Comment:<%= transaction.comment %></p>
-            <p>Start date:<%= transaction.start_date %></p>
-            <p>End date:<%= transaction.end_date %></p>
+            <p>Comment: <%= transaction.comment %></p>
+            <p>Start date: <%= transaction.start_date %></p>
+            <p>End date: <%= transaction.end_date %></p>
             <%= link_to '<i class="fa-solid fa-trash-can"></i>'.html_safe, transaction_path(transaction), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "card-remove-link" %>
           </div>
         <% end %>
