@@ -12,7 +12,7 @@
             <p class="show-card-location"><strong>Location: </strong> <%= @product.location %></p>
             <p class="show-card-text"><strong>Price:</strong> £ <%= @product.price %> per day</p>
         <div class="btn-show">
-            <%= link_to "<button class='btn-farm btn-show'>Rent fruit</button>".html_safe,  new_product_transaction_path(@product)  %>
+            <%= link_to "<button class='btn-farm btn-show btn-rent'>Rent item</button>".html_safe,  new_product_transaction_path(@product)  %>
         </div>
       </div>
     </div>

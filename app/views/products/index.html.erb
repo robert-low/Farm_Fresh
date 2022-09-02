@@ -1,8 +1,8 @@
   <div class= "home" style="background-color:white; margin-left: 5px; margin-top:20px;">
    <% if params[:query].blank? %>
-      <h3 class="home-title"><%= pluralize @products.count, 'product' %> available</h1>
+      <h3 class="home-title"><%= pluralize @products.count, 'item' %> available</h1>
     <% else %>
-      <h3><%= pluralize @products.count, 'result' %> for <%= params[:query] %></h1>
+      <h3><%= pluralize @products.count, 'result' %> matching "<%= params[:query] %>"</h1>
     <% end %>
   </div>
   <div class="main_container">

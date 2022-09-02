@@ -7,6 +7,7 @@
     padding: 0px 50px;
     color: $blue;
     border-top: 2px solid $blue;
+    font-size: 12px;
   }
   .footer-links {
     display: flex;
@@ -16,7 +17,7 @@
     color: $blue;
     opacity: 1;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 16px;
     padding: 0px 10px;
   }
   .footer-links a:hover {
@@ -24,4 +25,9 @@
   }
   .footer .fa-heart {
     color: #D23333;
+  }
+
+  .footer-created-by {
+    align-items: center;
+    padding-top: 5px;
   }

@@ -1,6 +1,33 @@
 <div>
-    <h1>Pages#home</h1>
-    <p>Find me in app/views/pages/home.html.erb</p>
-   
-
+  <div
+    class="banner"
+    style="
+      background-image: url(https://images.pexels.com/photos/1128678/pexels-photo-1128678.jpeg?cs=srgb&dl=pexels-trang-doan-1128678.jpg&fm=jpg);
+    "
+  >
+    <div class="container" stlye="width">
+      <h1 stlye="font-size: 80px;">Farm Fresh 🍆</h1>
+      <div class="container-title">
+        <p>
+          Whether you're a movie producer or a hobbiest, Farm Fresh has the
+          largest selection of <strong>Fake</strong> products for all your
+          needs!!
+        </p>
+        <div style="text-align: center; padding-top: 15px">
+          <!-- <a class="btn btn-flat" href="#">Start Shopping!</a> -->
+          <%= link_to "Start Shopping", products_path, class: "btn btn-flat" %>
+        </div>
+      </div>
+      <div class="comment-container">
+        <div class="comment-child-one">
+          <p>" The item selection is amazing!  "</p>
+          <p> - random stranger I forced to comment </p>
+        </div>
+        <div class="comment-child-two">
+          <p>" So realistic, my children ate a few products "</p>
+          <p> - Person we are in a lawsuit with </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
