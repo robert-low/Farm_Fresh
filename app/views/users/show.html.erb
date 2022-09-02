@@ -1,24 +1,23 @@
 <div class="transaction-container" >
-    <div class=transaction-title>
-        <h3> Welcome <%= @user.email %> </h3>
-        <h3> Here are your rentals </h3>
-    </div>
-    <% @transactions.each do |transaction| %>
-      <div class="transaction-card">
-        <div class="card-text">
-            <% @product = transaction.product %>
-            <p>Product: <%= @product.name %></p>
+  <div class=transaction-title>
+      <h3> Welcome <%= @user.email %> </h3>
+      <h3> Here are your rentals </h3>
+  </div>
+  <div class="container">
+    <div class="row m-5">
+      <div class="cards col">
+        <% @transactions.each do |transaction| %>
+          <div class="card-category p-3 rounded" style="background-color: #57CC99">
+            <h2><%= transaction.product.name %></h2>
+            <p>Product: <%= transaction.product.name %></p>
             <p>Quantity: <%= transaction.quantity %></p>
             <p>Comment:<%= transaction.comment %></p>
             <p>Start date:<%= transaction.start_date %></p>
             <p>End date:<%= transaction.end_date %></p>
-        </div>
-        <div class = "card-delete btn btn-danger">
-            <%= link_to "Delete" , transaction_path(transaction), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
-        </div>
-
+            <%= link_to '<i class="fa-solid fa-trash-can"></i>'.html_safe, transaction_path(transaction), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "card-remove-link" %>
+          </div>
+        <% end %>
       </div>
-    <% end %>
-     <%= link_to "Back to homepage", products_path, class: "btn btn-primary"%>
-     <br>
+    </div>
+  </div>
 </div>
