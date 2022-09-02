@@ -7,7 +7,7 @@
     <div class="row m-5">
       <div class="cards col">
         <% @transactions.each do |transaction| %>
-          <div class="card-category p-3 rounded" style="background-color: #57CC99">
+          <div class="card-category p-3 rounded shadow" style="background-color: #57CC99">
             <h2><%= transaction.product.name %></h2>
             <p>Product: <%= transaction.product.name %></p>
             <p>Quantity: <%= transaction.quantity %></p>
