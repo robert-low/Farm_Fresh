@@ -4,9 +4,9 @@
   justify-content: space-between;
   background: $dark_green;
   color: $blue;
-  height: 110px;
+  height: 90px;
 
-  border-bottom: 2px solid $blue;
+  // border-bottom: 2px solid $blue;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -14,8 +14,8 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  height: 85px;
-  width: 85px;
+  height: 75px;
+  width: 75px;
   border-radius: 50%;
   margin-left: 35px;
   // border: 2px solid white;
@@ -27,8 +27,6 @@
 }
 
 .avatar {
-  width: 85px;
+  width: 75px;
   border-radius: 50%;
 }
-
-
