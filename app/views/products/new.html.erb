@@ -1,8 +1,9 @@
-<h1 style="text-align: center; margin-top: 20px;">Add New Product</h1>
+<h1 style="text-align: center; margin-top: 20px;">Add an item for rental</h1>
 <div class="create-container">
 <div class="container">
 <%= simple_form_for(@product) do |f| %>
   <%= f.input :name %>
+  <%= f.input :mini_description %>
   <%= f.input :overview %>
   <%= f.input :price %>
   <%= f.input :image_url, as: :file %>
