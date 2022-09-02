@@ -6,7 +6,7 @@ User.destroy_all
 puts "Creating products ..."
 
 user_1 = User.create!(
-  email: "fakefruitfanatic@mail.com",
+  email: "fakefoodfanatic@mail.com",
   password: "wherenext"
 )
 
