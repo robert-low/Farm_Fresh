@@ -11,7 +11,7 @@
   <div class="row justify-content-center align-items-center">
     <div class="input-group">
       <div data-controller="refresh-list">
-        <%= form_with url: products_path, method: :get, html: { class: 'm-3', data: { refresh_list_target: 'form' } } do |f| %>
+        <%= form_with url: products_path, method: :get, html: { class: 'm-3 rounded w-100', data: { refresh_list_target: 'form' } } do |f| %>
           <%= f.text_field :query,
                            class: "form-control",
                            placeholder: 'Find some fake food!',
@@ -42,7 +42,7 @@
           </li>
         <% else %>
           <li class="nav-item">
-            <%= link_to "Login", new_user_session_path, class: "btn-farm" %>
+            <%= link_to "Login", new_user_session_path, class: "btn btn-flat" %>
           </li>
         <% end %>
       </ul>
